@@ -1,0 +1,29 @@
+﻿<Window x:Class="_22_10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Margin="0,20,0,0">
+            <WrapPanel Height="80" Background= "RoyalBlue">
+                <TextBox Text="File Name" x:Name="FileNameTextbox" FontWeight="DemiBold" Height="40" BorderBrush="Navy" BorderThickness="1" Width="100" Margin="15"/>
+                <Button Height="40" Width="50" Margin="8" BorderBrush="Green" BorderThickness="1" Content="▲" Foreground="Green" FontSize="25" Background="LimeGreen" Click="Button_Click_1"/>
+                <Button Height="40" Width="50" Margin = "8" BorderBrush="Maroon" Background="Firebrick" Foreground="Maroon" FontSize="15" Content="Save" x:Name="SaveButton" Click="SaveButton_Click" BorderThickness="1"/>
+                <Button Height="40" Width="50" Margin = "8" BorderBrush="SlateBlue" Foreground="White" Background="MediumSlateBlue" BorderThickness="1" x:Name="AutoSaveButton"  Content="⋁" FontSize="25" Click="AutoSaveButton_Click_1"/>
+                <Button Height="40" Width="50" Margin = "8" BorderBrush="SlateBlue" Foreground="White" Background="MediumSlateBlue" Content="Cut" Click="CutButton_Click" x:Name="CutButton" BorderThickness="1"/>
+                <Button Height="40" Width="50" Margin = "8" BorderBrush="SlateBlue" Foreground="White" Background="MediumSlateBlue" Content ="Copy" Click="CopyButton_Click" x:Name="CopyButton" BorderThickness="1"/>
+                <Button Height="40" Width="50" Margin = "8" BorderBrush="SlateBlue" Foreground="White" Background="MediumSlateBlue" Content ="Paste" Click="PasteButton_Click" x:Name ="PasteButton" BorderThickness="1"/>
+                <Button Height="40" Width="50" Margin = "8" BorderBrush="SlateBlue" Foreground="White" Background="MediumSlateBlue" Content ="Select All" Click="SelectAllButton_Click" x:Name="SelectAllButton" BorderThickness="1"/>
+            </WrapPanel>
+            <TextBox Height="300" FontWeight="DemiBold" x:Name="TextTextbox" BorderThickness="1" BorderBrush="RoyalBlue"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
